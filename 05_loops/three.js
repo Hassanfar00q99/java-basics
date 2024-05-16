@@ -34,6 +34,7 @@ const myObject = {
     game2: 'Spiderman'
 }
 
+// for of is not working in object
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
     
