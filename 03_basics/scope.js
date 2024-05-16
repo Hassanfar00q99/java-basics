@@ -23,4 +23,10 @@ function one(){
 
 }
 
-console.log(one().two());
+// console.log(one().two());
+a=5;
+b=4;
+// y=++a;
+y=a++;
+// console.log(y);
+console.log(a);
