@@ -33,7 +33,7 @@ const myCoding = [
     },
 ]
 
-// myCoding.forEach( (item) => {
+myCoding.forEach( (item) => {
     
-//     console.log(item.languageName);
-// } )
+    console.log(item.languageName);
+} )
