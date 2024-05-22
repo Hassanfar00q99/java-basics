@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // let titleName = document.getElementsByTagName('title');
+    // titleName.innerHTML=" hassn"
+
+    const newTitleText = " - Appended Text";
+    document.title += newTitleText;
+
+        function addlanguge(lang){
+        const licreat = document.createElement('li');
+        licreat.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(licreat);
+    }
+    addlanguge("python");
+    const arrowfunction = (lang) => {
+    const licreat = document.createElement('li');
+    licreat.appendChild(document.createTextNode(lang));
+    document.getElementsByClassName('language')[0].appendChild(licreat);
+    }
+    arrowfunction("hassan");
+
+
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.appendChild(document.createTextNode('pagal insan'));
+    secondLang.replaceWith(newli);
+    // newli.textContent = "Mojo"
+    // secondLang.replaceWith(newli)
+</script>
+</html>
