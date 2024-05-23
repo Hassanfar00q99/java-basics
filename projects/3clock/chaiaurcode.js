@@ -22,12 +22,12 @@ setInterval( () => {
 
 // we want this code solution
 // const clock = document.getElementById('clock');
-// // const clock = document.querySelector('#clock')
+// // // const clock = document.querySelector('#clock')
 
-setInterval( () => {
-  let date = new Date();
-  const test = document.createElement('span');
-  test.appendChild(document.createTextNode(date.toLocaleTimeString()));
-  // clock.innerHTML = '';
-  // clock.appendChild(test)
-}, 1000);
+// setInterval( () => {
+//   let date = new Date();
+//   const test = document.createElement('span');
+//   test.appendChild(document.createTextNode(date.toLocaleTimeString()));
+//   // clock.innerHTML = '';
+//   clock.appendChild(test)
+// }, 1000);
