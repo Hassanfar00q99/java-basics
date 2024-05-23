@@ -2,10 +2,11 @@ const form = document.querySelector('form');
 form.addEventListener('submit', function(event){
     event.preventDefault();
     let height = parseInt(document.querySelector("#height").value);
-    let weight = parseInt(document.querySelector("#weight").value);
+    let weight = parseInt(document.getElementById("weight").value);
     // const bmi = (weight / ((height * height) / 10000)).toFixed(2);
 
     let results = document.querySelector("#results");
+    
     if(height === ''|| height < 0 || isNaN(height)){
         results.innerHTML=`please put right value of height ${height}`;
     } else if(weight === ''|| weight < 0 || isNaN(weight)){
