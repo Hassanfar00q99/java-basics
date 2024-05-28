@@ -9,9 +9,9 @@ for (let h = 5; h < 10; h++) {
     }
 } 
 
-const greetings = "Hello 5 world! ";
-for (const greet of greetings) {
-    if (greet !== " ") {
-        console.log(`Each char is ${greet}`);
-    }
-}
+// const greetings = "Hello 5 world! ";
+// for (const greet of greetings) {
+//     if (greet !== " ") {
+//         console.log(`Each char is ${greet}`);
+//     }
+// }

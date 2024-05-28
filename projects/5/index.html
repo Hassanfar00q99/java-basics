@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>prectice makes man perfect</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // let intervalId;
+    // document.getElementById('start').addEventListener('click', function(e){
+    //     const test = ()=> console.log("hassan ");
+    //    intervalId = setInterval(test,1000);
+    // })
+    // document.getElementById('stop').addEventListener('click', function(e){
+    //     clearInterval(intervalId);
+    // })
+    let storeinterval;
+    const startCode = ()=>{ 
+        if (storeinterval){
+            clearInterval(storeinterval)
+        }
+        storeinterval = setInterval(()=> console.log('jass'),1000);
+    }
+    const stopCode = () => {
+    clearInterval(storeinterval);
+    storeinterval = null;
+}
+    
+
+    document.getElementById('start').addEventListener('click',startCode);
+    document.getElementById('stop').addEventListener('click',stopCode);
+</script>
+</html>
